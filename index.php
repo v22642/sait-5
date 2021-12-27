@@ -131,23 +131,16 @@
 										</div>
 										</div>
 									</section>
-
+									<?php require "bloc/footer.php"?>
 							</div>
-							<div class="col-12">
-
-								<!-- Blog -->
-									
-								<?php require "bloc/footer.php"?>
-							</div>
+							
 						</div>
 					</div>
+					
 				</section>
-
-			<!-- Footer -->
-			
-			
-
+				<!-- Footer -->
+					
 		</div>
-			
+		
 	</body>
 </html>

@@ -53,7 +53,7 @@
 				<?php require "bloc/footer.php"?>
 					
 			</section>
-
+			
 		</div>
 
 	</body>
