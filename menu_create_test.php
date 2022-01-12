@@ -2,7 +2,7 @@
 <?php session_start();?>
 <html>
 	<head>
-		<title>Сменить данные</title>
+		<title>Создать тест</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
@@ -32,13 +32,25 @@
                                     <form action="core/signup.php" method="post" enctype="multipart/form-data">
 
                                         
-                                        <label>E-mail</label>
-                                        <input type ="email" name="email" placeholder="введите E-mail">
-                                        <label>Картинка</label>
-                                        <input type ="file" name="ava" >
+										<?php
+											require 'core/conect.php';
+											session_start();
+											echo'<select name="thing">';
+											
+											$qu=$pdo->query('SELECT * FROM `thing`');
+											while($row = $qu->fetch(PDO::FETCH_OBJ)){
+												
+												echo'<option>'.$row->name.'</option>';
+										
+											}
+											echo'</select>';
+										?>
+										<input type ="text" name="name" placeholder="введите название тесту">
+										<label>загрузкак файла .json</label><br>
+                                        <input type ="file" name="file" >
                                         <br>
                                         
-                                        <button type ="submit">поменять</button>
+                                        <button type ="submit">загрузить</button>
                                         
 
                                                 <?php

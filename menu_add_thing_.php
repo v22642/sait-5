@@ -2,7 +2,7 @@
 <?php session_start();?>
 <html>
 	<head>
-		<title>Сменить данные</title>
+		<title>Dopetrope by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
@@ -29,13 +29,12 @@
 
 								<!-- Content -->
 								<article class="box post">
-                                    <form action="core/signup.php" method="post" enctype="multipart/form-data">
+                                    <form action="core/signup_thing.php" method="post" enctype="multipart/form-data">
 
                                         
-                                        <label>E-mail</label>
-                                        <input type ="email" name="email" placeholder="введите E-mail">
-                                        <label>Картинка</label>
-                                        <input type ="file" name="ava" >
+                                        <label>Добавить предмет</label>
+                                        <input type ="text" name="thing" placeholder="добавить предмет">
+                                        
                                         <br>
                                         
                                         <button type ="submit">поменять</button>

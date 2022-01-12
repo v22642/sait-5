@@ -2,7 +2,7 @@
 <?php session_start();?>
 <html>
 	<head>
-		<title>Сменить данные</title>
+		<title>Добавить тему</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
@@ -30,15 +30,27 @@
 								<!-- Content -->
 								<article class="box post">
                                     <form action="core/signup.php" method="post" enctype="multipart/form-data">
-
-                                        
-                                        <label>E-mail</label>
-                                        <input type ="email" name="email" placeholder="введите E-mail">
-                                        <label>Картинка</label>
+									<label>Предметы</label>
+									<?php
+										require 'core/conect.php';
+										echo'<select name="thing">';
+										session_start();
+										$qu=$pdo->query('SELECT * FROM `thing`');
+										while($row = $qu->fetch(PDO::FETCH_OBJ)){
+											
+											echo'<option>'.$row->name.'</option>';
+									
+										}
+										echo'</select>';
+									?>
+                                        <label>Название темы</label>
+                                        <input type ="email" name="email" placeholder="Название темы">
+                                        <label>загрузка JSON</label>
                                         <input type ="file" name="ava" >
                                         <br>
-                                        
-                                        <button type ="submit">поменять</button>
+                                        <button type ="submit">Сделать здесь</button>
+										<br>
+                                        <button type ="submit">Добавить</button>
                                         
 
                                                 <?php

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-
+<?php session_start();?>
 <html>
 	<head>
 		<title>Dopetrope by HTML5 UP</title>
@@ -24,61 +24,69 @@
 
 					<!-- С нами ты cможешь -->
 
-						<section id="intro" class="container">
-							<h2 class ="sntc">С нами ты cможешь</h2>
-							<div class="row">
-								<div class="col-4 col-12-medium">
+						
+							<?php
+							if($_SESSION['user']['id']){
+								
+							}
+							else{
+								echo'
+								<section id="intro" class="container">
+								<h2 class ="sntc">С нами ты cможешь</h2>
+								<div class="row">
+									<div class="col-4 col-12-medium">
 
-									<section class="first">
-									<img src="images/opportunity.png" alt="">
+										<section class="first">
+										<img src="images/opportunity.png" alt="">
+											
+											<p>Безотрывно от учебы закрепить пройденные темы, проработать задания ОГЭ и ЕГЭ</p>
+										</section>
+									</div>
+									<div class="col-4 col-12-medium">
+										<section class="middle">
+										<img  class="i1" src="images/opportunity-2.png" alt="">
+											
 										
-										<p>Безотрывно от учебы закрепить пройденные темы, проработать задания ОГЭ и ЕГЭ</p>
-									</section>
+											<p>Самостоятельно определять время, место и условия обучения</p>
+										</section>
+									</div>
+									<div class="col-4 col-12-medium">
+										<section class="last">
+										<img  class="i2" src="images/opportunity-3.png" alt="">
+											
+											<p>Не беспокоиться о том, что отстанешь от своих одноклассников, ведь темп обучения выбираешь ты сам</p>
+										</section>
+									</div>
 								</div>
-								<div class="col-4 col-12-medium">
-									<section class="middle">
-									<img  class="i1" src="images/opportunity-2.png" alt="">
+								<div class="row">
+									<div class="col-4 col-12-medium">
+										<section class="first">
+										<img  class="i3" src="images/opportunity-4.png" alt="">
+											
+											<p>Найти новых друзей</p>
+										</section>
+									</div>
+									<div class="col-4 col-12-medium">
+										<section class="middle">
+										<img class="i4" src="images/opportunity-5.png" alt="">
+											
+											<p>Получить подарки</p>
+										</section>
+									</div>
+									<div class="col-4 col-12-medium">
+										<section class="last">
+										<img src="images/opportunity-6.png" alt="">
 										
-									
-										<p>Самостоятельно определять время, место и условия обучения</p>
-									</section>
+											<p>Стать экспертом</p>
+										</section>
+									</div>
 								</div>
-								<div class="col-4 col-12-medium">
-									<section class="last">
-									<img  class="i2" src="images/opportunity-3.png" alt="">
-										
-										<p>Не беспокоиться о том, что отстанешь от своих одноклассников, ведь темп обучения выбираешь ты сам</p>
-									</section>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<section class="first">
-									<img  class="i3" src="images/opportunity-4.png" alt="">
-										
-										<p>Найти новых друзей</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="middle">
-									<img class="i4" src="images/opportunity-5.png" alt="">
-										
-										<p>Получить подарки</p>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section class="last">
-									<img src="images/opportunity-6.png" alt="">
-									
-										<p>Стать экспертом</p>
-									</section>
-								</div>
-							</div>
-
-
-
+							</section>
+								';
+							}
 							
-						</section>
+						?>
+								
 
 			</section>
 
@@ -105,7 +113,7 @@
 												<div id="slides">
 													<div id="overflow">
 														<div class="image"><!-- картинки -->
-															<article><img src="images/удалить/1.jpg"></article>
+															<article><a href="https://www.instagram.com/p/CVfqh0WAGXB/?utm_source=ig_web_button_share_sheet"><img src="images/O0WDcGN8wII.jpg"></a></article>
 															<article><img src="2.jpg"></article>
 															<article><img src="3.jpg"></article>
 															<article><img src="4.jpg"></article>

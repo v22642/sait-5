@@ -2,7 +2,7 @@
 <?php session_start();?>
 <html>
 	<head>
-		<title>Сменить данные</title>
+		<title>Дать доступ к тесту</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
@@ -12,7 +12,7 @@
 		<div id="page-wrapper">
 		<section id="header">
 		<?php require "bloc/header.php"?>
-		</section>		
+		</section>
 					
 				<section id="main">
 					<div class="container">
@@ -35,7 +35,7 @@
                                         <label>E-mail</label>
                                         <input type ="email" name="email" placeholder="введите E-mail">
                                         <label>Картинка</label>
-                                        <input type ="file" name="ava" >
+                                        <input type ="file" name="ava">
                                         <br>
                                         
                                         <button type ="submit">поменять</button>

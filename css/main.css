@@ -210,10 +210,19 @@ input, select, textarea {
 		}
 		
 			
-		
-		
+		.mae{
+			margin-top: 6vh;
+		}
+		select{
+			margin-bottom: 6vh;
+			
+		}
 
 /* Row */
+	.acs{
+		padding: 3vh;
+		background:rgb(245, 245, 245);
+	}
 	.sntc{
 		margin-top: 7vh;
 		
@@ -362,6 +371,9 @@ input, select, textarea {
 
 		.row > .col-8 {
 			width: 66.66667%;
+		}
+		.row > .col-88 {
+			width: 100%;
 		}
 
 		.row > .off-8 {
@@ -747,6 +759,7 @@ input, select, textarea {
 
 		}
 
+		
 		@media screen and (max-width: 1280px) {
 
 			.row {
@@ -1243,6 +1256,7 @@ input, select, textarea {
 						}
 
 		}
+		
 
 		@media screen and (max-width: 736px) {
 			
@@ -1490,9 +1504,41 @@ input, select, textarea {
 		} 
 
 /* Form */
+.ava1{
+	width: 30vh;
+	height: 30vh;
+}
+.call2{
+	margin: 5vh;
+	width: 100%;
+	height: 15vh;
+	background: rgb(241, 241, 241);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.call{
+	margin: 5vh;
+	width: 100%;
+	height: 25vh;
+	background: rgb(241, 241, 241);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.call button{
+	margin:  2vh;
+}
+.call span{
+	margin-left: 5vh;
+	margin-right: 35vh;
+}
+.ror{
+	width: 20vh;
+}
+.mail{
+	width: 100%;
 	
+}
 
-	form label {
+
+	form label,.form {
 		display: block;
 		color: #252122;
 		font-weight: 400;
@@ -1500,9 +1546,11 @@ input, select, textarea {
 	}
 
 	form input[type=text],
+	.form input[type=text],
+	.form input[type=email],
 	form input[type=email],
 	form input[type=password],
-	form select,
+	.form select,
 	form textarea {
 		-webkit-appearance: none;
 		display: block;
@@ -1517,8 +1565,10 @@ input, select, textarea {
 
 		form input[type=text]:focus,
 		form input[type=email]:focus,
+		.form input[type=text]:focus,
+		.form input[type=email]:focus,
 		form input[type=password]:focus,
-		form select:focus,
+		.form select:focus,
 		form textarea:focus {
 			box-shadow: inset 0px 0px 1px 1px #43bff0;
 		}
@@ -2134,12 +2184,13 @@ input, select, textarea {
 	#header h1 {
 		background:url("../images/logo.png");
 		background-size: 100% 100%;
-		height: 15vh;
-    	width: 20vh;
+		height: 10vh;
+    	width: 15vh;
 		position: relative;
   		left:45%;
 		top:-3vh;
-	
+		
+		
 
 	}
 	.ava{
@@ -3228,3 +3279,4 @@ input, select, textarea {
 	#controls label{ /*прозрачность стрелок при отводе курсора*/
 		transition: opacity 0.2s ease-out;
 	}
+	

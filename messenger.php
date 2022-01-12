@@ -2,10 +2,12 @@
 <?php session_start();?>
 <html>
 	<head>
-		<title>Об акаунте</title>
+		<title>Мессенджер</title>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/js1.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body class="homepage is-preload">
@@ -13,7 +15,7 @@
 		<section id="header">
 		<?php require "bloc/header.php"?>
 		</section>		
-					
+		pGPzN79t
 				<section id="main">
 					<div class="container">
 						<div class="row">
@@ -22,7 +24,7 @@
 
 								<!-- Sidebar -->
 									
-								<?php require "bloc/menu_bar.php"?>
+								<?php require "bloc/menu_bar1.php"?>
 
 							</div>
 							<div class="col-8 col-12-medium ">
@@ -30,24 +32,16 @@
 								<!-- Content -->
 									<article class="box post">
 										<!-- здесь сделать отображения информации об акаунте -->
-										<?php
-										// echo'<p>Имя</p>';
-										// echo'<p>'.$_SESSION['user']['lоgin'].'</p>';
-										echo'<p>E-mail</p>';
-										echo'<p>'.$_SESSION['user']['email'].'</p>';
-										echo'<p>аватар</p>';
-										echo'<img class ="ava1"src="'.$_SESSION['user']['avatar'].'" alt="">';
-										// "id"=>$user['id'],
-										// "lоgin" => $user['lоgin'],
-										// "email" => $user['email'],
-										// "avatar" =>$user['avatar'],
-										// "user" =>$user['user']
-										?>
-										
-										
-										
-										
+										<div style="overflow: auto; width:100%; height:400px;">
+										<div id="messages">
 
+										</div>
+										</div>
+										<div class="form">
+										<input type ="text" name="name" id="txtName" placeholder="" >
+										<button class="ror" id="btnSend">найти</button>
+									</div> 
+									
 									</article>
 
 							</div>
